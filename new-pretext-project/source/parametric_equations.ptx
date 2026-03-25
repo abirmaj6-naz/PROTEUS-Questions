@@ -1,0 +1,242 @@
+<section xml:id="sec-parametric-conceptual-questions">
+  <title>Conceptual Questions: Parametric Equations</title>
+
+  <introduction>
+    <p>The following exercises review key conceptual ideas from Section 10.2 on parametric equations, including identifying the curve, determining direction of motion, recognizing repeated tracing, and comparing different parametrizations of the same geometric object.</p>
+  </introduction>
+
+  <exercise xml:id="ex-parametric-conceptual-1">
+    <statement>
+      <p>A particle moves according to <m>x=t</m>, <m>y=t^2</m>, for <m>-2\le t\le 2</m>. Which statement is true?</p>
+      <choices>
+        <choice correct="no">
+          <p>The particle traces the parabola from right to left.</p>
+        </choice>
+        <choice correct="yes">
+          <p>The particle traces only a portion of the parabola <m>y=x^2</m>, moving from left to right.</p>
+        </choice>
+        <choice correct="no">
+          <p>The particle traces the entire parabola <m>y=x^2</m>.</p>
+        </choice>
+        <choice correct="no">
+          <p>The particle traces the parabola twice.</p>
+        </choice>
+      </choices>
+    </statement>
+    <solution>
+      <p>Since <m>x=t</m>, we have <m>y=x^2</m>. Because <m>-2\le t\le 2</m>, the curve is only the portion with <m>-2\le x\le 2</m>. As <m>t</m> increases, <m>x</m> increases, so the motion is from left to right.</p>
+    </solution>
+  </exercise>
+
+  <exercise xml:id="ex-parametric-conceptual-2">
+    <statement>
+      <p>Which parametric equations trace the line segment from <m>(0,1)</m> to <m>(2,5)</m> along the line <m>y=2x+1</m>?</p>
+      <choices>
+        <choice correct="yes">
+          <p><m>x=t,\ y=2t+1,\ 0\le t\le 2</m></p>
+        </choice>
+        <choice correct="no">
+          <p><m>x=2t,\ y=4t+1,\ 0\le t\le 2</m></p>
+        </choice>
+        <choice correct="no">
+          <p><m>x=t,\ y=2t+1,\ -1\le t\le 1</m></p>
+        </choice>
+        <choice correct="no">
+          <p><m>x=t^2,\ y=2t^2+1,\ 0\le t\le 2</m></p>
+        </choice>
+      </choices>
+    </statement>
+    <solution>
+      <p>The equations <m>x=t</m> and <m>y=2t+1</m> produce <m>y=2x+1</m>. When <m>t=0</m>, the point is <m>(0,1)</m>, and when <m>t=2</m>, the point is <m>(2,5)</m>. The other options either trace a larger portion, the wrong segment, or not the full segment in the intended way.</p>
+    </solution>
+  </exercise>
+
+  <exercise xml:id="ex-parametric-conceptual-3">
+    <statement>
+      <p>A particle moves according to <m>x=\cos t</m>, <m>y=\sin t</m>, for <m>0\le t\le 4\pi</m>. How many times is the unit circle traced?</p>
+      <choices>
+        <choice correct="no">
+          <p>One-half time</p>
+        </choice>
+        <choice correct="no">
+          <p>One time</p>
+        </choice>
+        <choice correct="yes">
+          <p>Two times</p>
+        </choice>
+        <choice correct="no">
+          <p>Four times</p>
+        </choice>
+      </choices>
+    </statement>
+    <solution>
+      <p>The parametrization <m>x=\cos t,\ y=\sin t</m> completes one full revolution when <m>t</m> runs from <m>0</m> to <m>2\pi</m>. Since the interval is <m>0\le t\le 4\pi</m>, the circle is traced twice.</p>
+    </solution>
+  </exercise>
+
+  <exercise xml:id="ex-parametric-conceptual-4">
+    <statement>
+      <p>Consider the parametric equations <m>x=t^2</m>, <m>y=t+1</m>, for <m>-2\le t\le 2</m>. Which statement is true?</p>
+      <choices>
+        <choice correct="no">
+          <p>The curve is a parabola traced exactly once from left to right.</p>
+        </choice>
+        <choice correct="yes">
+          <p>The curve is part of a sideways parabola, and some <m>x</m>-values occur more than once.</p>
+        </choice>
+        <choice correct="no">
+          <p>The curve is a line segment traced from bottom to top.</p>
+        </choice>
+        <choice correct="no">
+          <p>The curve is the entire parabola <m>y=x^2</m>.</p>
+        </choice>
+      </choices>
+    </statement>
+    <solution>
+      <p>Since <m>t=y-1</m>, substituting into <m>x=t^2</m> gives <m>x=(y-1)^2</m>, a sideways parabola. Because <m>x=t^2</m>, the same <m>x</m>-value occurs for both positive and negative values of <m>t</m>.</p>
+    </solution>
+  </exercise>
+
+  <exercise xml:id="ex-parametric-conceptual-5">
+    <statement>
+      <p>Suppose <m>x(t)</m> is increasing and <m>y(t)</m> is decreasing on an interval. What can be concluded about the motion of the particle on that interval?</p>
+      <choices>
+        <choice correct="no">
+          <p>The particle moves left and up.</p>
+        </choice>
+        <choice correct="yes">
+          <p>The particle moves right and down.</p>
+        </choice>
+        <choice correct="no">
+          <p>The particle moves left and down.</p>
+        </choice>
+        <choice correct="no">
+          <p>The particle must move along a straight line.</p>
+        </choice>
+      </choices>
+    </statement>
+    <solution>
+      <p>If <m>x(t)</m> is increasing, then the particle moves to the right. If <m>y(t)</m> is decreasing, then the particle moves downward. This does not imply the path is a straight line.</p>
+    </solution>
+  </exercise>
+
+  <exercise xml:id="ex-parametric-conceptual-6">
+    <statement>
+      <p>Which of the following parametrizations traces the line <m>y=3x-2</m> in the direction from left to right?</p>
+      <choices>
+        <choice correct="yes">
+          <p><m>x=t,\ y=3t-2</m>, where <m>t</m> increases</p>
+        </choice>
+        <choice correct="no">
+          <p><m>x=-t,\ y=-3t-2</m>, where <m>t</m> increases</p>
+        </choice>
+        <choice correct="no">
+          <p><m>x=t^2,\ y=3t^2-2</m>, where <m>t</m> increases</p>
+        </choice>
+        <choice correct="no">
+          <p><m>x=\sin t,\ y=3\sin t-2</m>, for all real <m>t</m></p>
+        </choice>
+      </choices>
+    </statement>
+    <solution>
+      <p>The first option gives <m>y=3x-2</m> and as <m>t</m> increases, <m>x=t</m> increases, so the motion is left to right. The second option traces the same line but with reversed direction. The other options do not trace the entire line in a simple one-pass left-to-right way.</p>
+    </solution>
+  </exercise>
+
+  <exercise xml:id="ex-parametric-conceptual-7">
+    <statement>
+      <p>Two parametrizations are given:</p>
+      <p><m>x=\cos t,\ y=\sin t,\ 0\le t\le 2\pi</m></p>
+      <p>and</p>
+      <p><m>x=\cos(2t),\ y=\sin(2t),\ 0\le t\le \pi</m>.</p>
+      <p>Which statement is true?</p>
+      <choices>
+        <choice correct="no">
+          <p>The second traces a larger circle.</p>
+        </choice>
+        <choice correct="no">
+          <p>The second traces the same circle twice.</p>
+        </choice>
+        <choice correct="yes">
+          <p>The second traces the same circle once, but at a different speed.</p>
+        </choice>
+        <choice correct="no">
+          <p>The two curves are different because the parameter intervals are different.</p>
+        </choice>
+      </choices>
+    </statement>
+    <solution>
+      <p>As <m>t</m> goes from <m>0</m> to <m>\pi</m>, the angle <m>2t</m> goes from <m>0</m> to <m>2\pi</m>. So the second parametrization traces the unit circle exactly once, but the parameter changes at a different rate.</p>
+    </solution>
+  </exercise>
+
+  <exercise xml:id="ex-parametric-conceptual-8">
+    <statement>
+      <p>A parametric curve is given by <m>x=t^3</m>, <m>y=t^6</m>. Which Cartesian equation describes the curve?</p>
+      <choices>
+        <choice correct="no">
+          <p><m>y=x^2</m>, for all real <m>x</m></p>
+        </choice>
+        <choice correct="yes">
+          <p><m>y=x^2</m>, with <m>y\ge 0</m></p>
+        </choice>
+        <choice correct="no">
+          <p><m>x=y^2</m>, with <m>x\ge 0</m></p>
+        </choice>
+        <choice correct="no">
+          <p><m>y=x^3</m></p>
+        </choice>
+      </choices>
+    </statement>
+    <solution>
+      <p>Since <m>x=t^3</m>, we have <m>x^2=t^6=y</m>. Thus the curve satisfies <m>y=x^2</m>. Because squares are nonnegative, <m>y\ge 0</m>, which is consistent with the parabola.</p>
+    </solution>
+  </exercise>
+
+  <exercise xml:id="ex-parametric-conceptual-9">
+    <statement>
+      <p>Which statement best explains why two different parametric equations can describe the same geometric curve?</p>
+      <choices>
+        <choice correct="no">
+          <p>Because parametric equations always produce infinitely many different curves.</p>
+        </choice>
+        <choice correct="yes">
+          <p>Different functions of the parameter can produce the same set of points, possibly with different speeds or directions.</p>
+        </choice>
+        <choice correct="no">
+          <p>Because every Cartesian equation has only one possible parametrization.</p>
+        </choice>
+        <choice correct="no">
+          <p>Because changing the parameter always changes the geometric shape of the curve.</p>
+        </choice>
+      </choices>
+    </statement>
+    <solution>
+      <p>A parametric curve is determined by the set of points traced and how they are traced. Different choices of parameter can produce the same set of points while changing orientation, speed, or how often the curve is retraced.</p>
+    </solution>
+  </exercise>
+
+  <exercise xml:id="ex-parametric-conceptual-10">
+    <statement>
+      <p>A particle moves according to <m>x=\cos t</m>, <m>y=\sin t</m>, for <m>0\le t\le \pi</m>. Which description is correct?</p>
+      <choices>
+        <choice correct="no">
+          <p>The particle traces the entire unit circle clockwise.</p>
+        </choice>
+        <choice correct="yes">
+          <p>The particle traces the upper semicircle counterclockwise from <m>(1,0)</m> to <m>(-1,0)</m>.</p>
+        </choice>
+        <choice correct="no">
+          <p>The particle traces the lower semicircle clockwise from <m>(1,0)</m> to <m>(-1,0)</m>.</p>
+        </choice>
+        <choice correct="no">
+          <p>The particle traces a line segment from <m>(1,0)</m> to <m>(-1,0)</m>.</p>
+        </choice>
+      </choices>
+    </statement>
+    <solution>
+      <p>At <m>t=0</m>, the point is <m>(1,0)</m>. At <m>t=\pi/2</m>, the point is <m>(0,1)</m>. At <m>t=\pi</m>, the point is <m>(-1,0)</m>. Thus the motion follows the upper semicircle counterclockwise.</p>
+    </solution>
+  </exercise>
+
+</section>

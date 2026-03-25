@@ -5,7 +5,7 @@
   <xi:include href="./docinfo.ptx" />
 
   <book xml:id="my-great-book">
-    <title>My Great Book</title>
+    <title>Proteus Questions</title>
     <subtitle>An example to get you started</subtitle>
 
     <!-- Include frontmatter -->
@@ -17,6 +17,10 @@
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
+
+    <!-- Include parametric_equations -->
+    <xi:include href="./parametric_equations.ptx" />
+
 
   </book>
 </pretext>
