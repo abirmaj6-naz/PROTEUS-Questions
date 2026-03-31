@@ -1,6 +1,7 @@
 <section xml:id="sec-10-2parametric-questions">
-  <exercises xml:id="parametric-curves">
   <title>10.2 Parametric Equations</title>
+
+  <exercises xml:id="parametric-curves">
 
   <!-- <introduction>
     <p>The following exercises review key conceptual ideas from Section 10.2 on parametric equations, including identifying the curve, 
@@ -9,6 +10,7 @@
 
 
   <exercise xml:id="ex-parametric-conceptual-2">
+    <title>Exercise 1</title>
     <statement>
       <p>Which parametric equations trace the line segment from <m>(0,1)</m> to <m>(2,5)</m> along the line <m>y=2x+1</m>?</p>
       </statement>
