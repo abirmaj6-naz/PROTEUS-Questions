@@ -18,8 +18,9 @@
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
 
+
     <!-- Include parametric_equations -->
-    <xi:include href="./parametric_equations.ptx" />
+    <!-- <xi:include href="./parametric_equations.ptx" /> -->
 
 
   </book>

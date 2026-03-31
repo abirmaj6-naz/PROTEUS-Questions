@@ -12,7 +12,7 @@
 
 
   <exercise xml:id="ex-parametric-conceptual-1">
-    <title> Exercise 1: Around the Circle</title>
+    <title> Exercise: Around the Circle</title>
     <statement>
       <p>A particle moves according to <m>x=\cos t</m>, <m>y=\sin t</m>, for <m>0\le t\le 4\pi</m>. 
         How many times is the unit circle traced?</p>
@@ -38,7 +38,7 @@
   </exercise>
 
   <exercise xml:id="ex-parametric-conceptual-2">
-    <title>Exercise 2: What is this curve?</title>
+    <title>Exercise: What is this curve?</title>
     <statement>
       <p>Consider the parametric equations <m>x=t^2</m>, <m>y=t+1</m>, for <m>-2\le t\le 2</m>. Which statement is true?</p>
       </statement>
@@ -63,7 +63,7 @@
   </exercise> -->
 
   <exercise xml:id="ex-parametric-conceptual-3">
-    <title>Exercise 3: No Direction home</title>
+    <title>Exercise: No Direction home</title>
     
     <statement>
       <p>Suppose <m>x(t)</m> is increasing and <m>y(t)</m> is decreasing on an interval. 
@@ -95,7 +95,7 @@
 
 
   <exercise xml:id="ex-parametric-conceptual-4">
-    <title>Exercise 4: Select the correct statement</title>
+    <title>Exercise: Select the correct statement</title>
     
     <statement>
       <p>Two parametrizations are given:</p>
@@ -124,7 +124,7 @@
   </exercise>
 
   <exercise xml:id="ex-parametric-conceptual-5">
-    <title>Exercise 5: Find the Cartesian Equation</title>
+    <title>Exercise: Find the Cartesian Equation</title>
     <statement>
       <p>A parametric curve is given by <m>x=t^3</m>, <m>y=t^6</m>. Which Cartesian equation describes the curve?</p>
     </statement>
@@ -151,7 +151,7 @@
   </exercise>
 
   <exercise xml:id="ex-parametric-conceptual-6">
-    <title>Exercise 6: Best in show</title>
+    <title>Exercise: Best in show</title>
     <statement>
       <p>Which statement best explains why two different parametric equations can describe the same geometric curve?</p>
     </statement>
@@ -185,7 +185,7 @@
   </exercise>
 
   <exercise xml:id="ex-parametric-conceptual-7">
-    <title>Exercise 7: Correct Description</title>
+    <title>Exercise: Correct Description</title>
     <statement>
       <p>A particle moves according to <m>x=\cos t</m>, <m>y=\sin t</m>, for <m>0\le t\le \pi</m>. 
         Which description is correct?</p>
@@ -214,7 +214,7 @@
 
 
 <exercise label="parametric-multiple-choice-multiple-answers">
-  <title>Exercise 8: Select all that apply</title>
+  <title>Exercise: Select all that apply</title>
   <statement>
     <p>
       A particle moves according to <m>x=t^2</m> and <m>y=t^2</m> for <m>-2\le t&lt;2</m>.
@@ -316,7 +316,7 @@
 
 
 <exercise xml:id="matching-parametric-distractors" label="matching-parametric-concepts-with-distractors">
-  <title>Exercise 9: Match Parametric Equations to Graph Descriptions (with Distractors)</title>
+  <title>Exercise: Match Parametric Equations to Graph Descriptions (with Distractors)</title>
   <idx>parametric matching</idx>
   <statement>
     <p>
@@ -356,21 +356,98 @@
       <response>A vertical line segment</response>
     </match>
  <!-- Distractors -->
- 
     <match>     
       <response>Line segment along <m>y=2x</m> from <m>(0,0)</m> to <m>(2,4)</m></response>
     </match>
     <match>
-    <response>Circle of radius 2 centered at the origin</response>
+      <response>Circle of radius 2 centered at the origin</response>
     </match>
     <match>
-            <response>An horizontal line segment</response>
-
+      <response>An horizontal line segment</response>
     </match>
     <response>Downward-opening parabola from (-2,4) to (2,4)</response>
     <response>Horizontal line y=3</response>
     <response>Figure traced only once from t=0 to t=1</response>
   </cardsort>
+</exercise>
+
+<exercise xml:id="matching-parametric-reset" label="matching-parametric-concepts">
+  <title>Exercise: Match Parametric Equations to Graph Descriptions II (with Distractors)</title>
+  <idx>parametric matching with distractors</idx>
+
+  <statement>
+    <p>
+      Match each parametric curve with the description of its graph or motion.
+      Some responses may not match any curve.
+    </p>
+  </statement>
+
+  <feedback>
+    <p>
+      To analyze a parametric curve, try eliminating the parameter first.
+      Then consider the interval for <m>t</m> and whether the particle traces the curve once, retraces part of it, 
+      or changes direction.
+    </p>
+  </feedback>
+
+  <cardsort>
+    <!-- True matches -->
+    <match>
+      <premise order="1"><m>x=t^2,\ y=t^2,\ -2\le t&lt;2</m></premise>
+      <response>Line segment on <m>y=x</m> from <m>(0,0)</m> to <m>(4,4)</m>, mostly traced twice</response>
+    </match>
+
+    <match>
+      <premise order="2"><m>x=\cos t,\ y=\sin t</m>, <m>0\le t\le 2\pi</m></premise>
+      <response>Circle of radius 1 centered at the origin, traced once counterclockwise</response>
+    </match>
+
+    <match>
+      <premise order="3"><m>x=t,\ y=t^2,\ -2\le t\le 2</m></premise>
+      <response>Upward-opening parabola from <m>(-2,4)</m> through <m>(0,0)</m> to <m>(2,4)</m></response>
+    </match>
+
+    <match>
+      <premise order="4"><m>x=2\cos t,\ y=3\sin t</m>, <m>0\le t\le 2\pi</m></premise>
+      <response>Ellipse centered at the origin with horizontal semiaxis 2 and vertical semiaxis 3</response>
+    </match>
+
+    <match>
+      <premise order="5"><m>x=t^3,\ y=t^6,\ -1\le t\le 1</m></premise>
+      <response>Upper half of the curve <m>y=x^2</m> from <m>(-1,1)</m> to <m>(1,1)</m></response>
+    </match>
+
+    <!-- Distractors: responses with no matching premise -->
+     <match>
+      <response>Horizontal line segment from <m>(-2,3)</m> to <m>(2,3)</m></response>
+     </match>
+     
+    <match><response>Circle of radius 2 centered at <m>(1,1)</m></response></match>
+    <match><response>Downward-opening parabola from <m>(-2,4)</m> to <m>(2,4)</m></response></match>
+    <response>Line segment on <m>y=x</m> from <m>(0,0)</m> to <m>(4,4)</m>, traced exactly once</response>
+    <response>Ellipse centered at the origin with horizontal semiaxis 3 and vertical semiaxis 2</response>
+  </cardsort>
+
+  <hint>
+    <p>
+      Some responses are distractors and should remain unmatched.
+      If two equations seem similar, pay close attention to the interval of <m>t</m> and the direction of motion.
+    </p>
+  </hint>
+
+  <solution>
+    <p>
+      The correct matches are found by identifying the geometric curve first and then checking the interval of <m>t</m>.
+      For example, <m>x=t^2</m> and <m>y=t^2</m> imply <m>y=x</m>, but only for <m>0\le x\le 4</m>, and the motion retraces the segment because both positive and negative values of <m>t</m> produce the same point.
+      The remaining unmatched responses are distractors.
+    </p>
+  </solution>
+
+  <statement>
+    <p>
+      <button type="button" onclick="window.location.reload();">Reset Problem</button>
+    </p>
+  </statement>
 </exercise>
 </exercises>
 </section>
