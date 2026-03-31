@@ -1,41 +1,12 @@
-<section xml:id="sec-10.2parametric-questions">
+<section xml:id="sec-10-2parametric-questions">
+  <exercises xml:id="parametric-curves">
   <title>10.2 Parametric Equations</title>
 
-  <introduction>
+  <!-- <introduction>
     <p>The following exercises review key conceptual ideas from Section 10.2 on parametric equations, including identifying the curve, 
       determining direction of motion, recognizing repeated tracing, and comparing different parametrizations of the same geometric object.</p>
-  </introduction>
+  </introduction> -->
 
-  <!-- <exercise xml:id="ex-parametric-conceptual-1">
-    <statement>
-      <p>A particle moves according to <m>x=t</m>, <m>y=t^2</m>, for <m>-2\le t\le 2</m>. Which statement is true?</p>
-    </statement>
-      <choices>
-        <choice correct="no">
-          <statement>
-            <p>The particle traces the parabola from right to left.</p>
-          </statement>
-        </choice>
-        <choice correct="yes">
-          <statement>
-          <p>The particle traces only a portion of the parabola <m>y=x^2</m>, moving from left to right.</p>
-          </statement>
-        </choice>
-        <choice correct="no">
-          <statement>
-          <p>The particle traces the entire parabola <m>y=x^2</m>.</p>
-          </statement>
-        </choice>
-        <choice correct="no">
-          <statement>
-          <p>The particle traces the parabola twice.</p>
-          </statement>
-        </choice>
-      </choices>
-    <solution>
-      <p>Since <m>x=t</m>, we have <m>y=x^2</m>. Because <m>-2\le t\le 2</m>, the curve is only the portion with <m>-2\le x\le 2</m>. As <m>t</m> increases, <m>x</m> increases, so the motion is from left to right.</p>
-    </solution> 
-  </exercise> -->
 
   <exercise xml:id="ex-parametric-conceptual-2">
     <statement>
@@ -547,4 +518,5 @@
     <response>Figure traced only once from t=0 to t=1</response>
   </cardsort>
 </exercise>
+</exercises>
 </section>
