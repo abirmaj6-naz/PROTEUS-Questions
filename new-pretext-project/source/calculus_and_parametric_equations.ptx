@@ -1,0 +1,459 @@
+<section xml:id="sec-1-3parametric-questions">
+  <title>10.3 Calculus and Parametric Equations</title>
+
+  <exercises xml:id="calculus_parametric">
+
+  <introduction>
+    <p>
+        We are still interested in lines tangent to points on a curve. They describe how the 
+        <m>y</m>-values are changing with respect to the <m>x</m>-values, 
+        they are useful in making approximations, and they indicate instantaneous direction of travel.
+    </p>
+  </introduction>
+
+
+  <exercise xml:id="sec10-3-concept-mc-01" label="sec10-3-concept-mc-01">
+    <title>Exercise: Same curve, different parameterizations.</title>
+     <statement>
+    <p>
+      Two particles move according to the parametric equations
+      <m>x=t,\ y=t^2</m> and <m>x=2t,\ y=4t^2</m>.
+      Which statement is true?
+    </p>
+  </statement>
+
+  <choices randomize="yes">
+    <choice correct="yes">
+      <statement><p>Both particles trace the same parabola, but they may move along it at different rates.</p></statement>
+      <feedback><p>Correct. Both parameterizations describe the curve <m>y=x^2</m>, but the parameter changes how the curve is traced.</p></feedback>
+    </choice>
+    <choice correct="no">
+      <statement><p>The particles trace different curves because the equations are not identical.</p></statement>
+      <feedback><p>Different parameterizations can describe the same geometric curve.</p></feedback>
+    </choice>
+    <choice correct="no">
+      <statement><p>The second particle traces a line, not a parabola.</p></statement>
+      <feedback><p>Eliminating the parameter still gives <m>y=x^2</m>.</p></feedback>
+    </choice>
+    <choice correct="no">
+      <statement><p>The two particles must move in opposite directions.</p></statement>
+      <feedback><p>There is no reason they must move in opposite directions.</p></feedback>
+    </choice>
+  </choices>
+</exercise>
+
+<!--
+  <exercise xml:id="ex-parametric-conceptual-2">
+    <title>Exercise: What is this curve?</title>
+    <statement>
+      <p>Consider the parametric equations <m>x=t^2</m>, <m>y=t+1</m>, for <m>-2\le t\le 2</m>. Which statement is true?</p>
+      </statement>
+      <choices>
+        <choice correct="no">
+          <statement><p>The curve is part of a parabola traced exactly once from left to right.</p></statement>
+        </choice>
+        <choice correct="yes">
+          <statement><p>The curve is part of a sideways parabola, and some <m>x</m>-values occur more than once.</p></statement>
+        </choice>
+        <choice correct="no">
+          <statement><p>The curve is a line segment traced from bottom to top.</p></statement>
+        </choice>
+        <choice correct="no">
+          <statement><p>The curve is the entire parabola <m>y=x^2</m>.</p></statement>
+        </choice>
+      </choices>
+    <solution>
+      <p>Since <m>t=y-1</m>, substituting into <m>x=t^2</m> gives <m>x=(y-1)^2</m>, a sideways parabola. 
+        Because <m>x=t^2</m>, the same <m>x</m>-value occurs for both positive and negative values of <m>t</m>.</p>
+    </solution>
+  </exercise> -->
+
+  <exercise xml:id="ex-parametric-conceptual-3">
+    <title>Exercise: No Direction home</title>
+    
+    <statement>
+      <p>Suppose <m>x(t)</m> is increasing and <m>y(t)</m> is decreasing on an interval. 
+        What can be concluded about the motion of the particle <m>(x(t), y(t))</m> on that interval?</p>
+      </statement>
+      <choices>
+        <choice correct="no">
+          <statement><p>The particle moves left and up.</p></statement>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <p>
+              The particle moves right and down.
+            </p>
+          </statement>
+        </choice>
+        <choice correct="no">
+          <statement><p>The particle moves left and down.</p></statement>
+        </choice>
+        <choice correct="no">
+          <statement><p>The particle must move along a straight line.</p></statement>
+        </choice>
+      </choices>
+    <solution>
+      <p>If <m>x(t)</m> is increasing, then the particle moves to the right. If <m>y(t)</m> is decreasing, then the particle moves downward. 
+        This does not imply the path is a straight line.</p>
+    </solution>
+  </exercise>
+
+
+  <exercise xml:id="ex-parametric-conceptual-4">
+    <title>Exercise: Select the correct statement</title>
+    
+    <statement>
+      <p>Two parametrizations are given:</p>
+      <p><m>x=\cos t,\ y=\sin t,\ 0\le t\le 2\pi</m></p>
+      <p>and</p>
+      <p><m>x=\cos(2t),\ y=\sin(2t),\ 0\le t\le \pi</m>.</p>
+      <p>Which statement is true?</p>
+    </statement>
+      <choices>
+        <choice correct="no">
+           <statement><p>The second traces a larger circle.</p> </statement>
+        </choice>
+        <choice correct="no">
+           <statement><p>The second traces the same circle twice.</p> </statement>
+        </choice>
+        <choice correct="yes">
+           <statement><p>The second traces the same circle once, but at a different speed.</p> </statement>
+        </choice>
+        <choice correct="no">
+           <statement><p>The two curves are different because the parameter intervals are different.</p> </statement>
+        </choice>
+      </choices>
+    <solution>
+      <p>As <m>t</m> goes from <m>0</m> to <m>\pi</m>, the angle <m>2t</m> goes from <m>0</m> to <m>2\pi</m>. So the second parametrization traces the unit circle exactly once, but the parameter changes at a different rate.</p>
+    </solution>
+  </exercise>
+
+  <exercise xml:id="ex-parametric-conceptual-5">
+    <title>Exercise: Find the Cartesian Equation</title>
+    <statement>
+      <p>A parametric curve is given by <m>x=t^3</m>, <m>y=t^6</m>. Which Cartesian equation describes the curve?</p>
+    </statement>
+      <choices>
+        <choice correct="no">
+           <statement><p><m>y=x^2</m>, with <m>x\ge 0</m></p> </statement>
+        </choice>
+        <choice correct="yes">
+           <statement><p><m>y=x^2</m>, with <m>y\ge 0</m></p> </statement>
+        </choice>
+        <choice correct="no">
+           <statement><p><m>x=y^2</m>, with <m>x\ge 0</m></p> </statement>
+        </choice>
+        <choice correct="no">
+           <statement><p><m>y=x^3</m></p> </statement>
+        </choice>
+      </choices>
+    <solution>
+       <statement>
+      <p>Since <m>x=t^3</m>, we have <m>x^2=t^6=y</m>. Thus the curve satisfies <m>y=x^2</m>. 
+        Because squares are nonnegative, <m>y\ge 0</m>, which is consistent with the parabola.</p>
+       </statement>
+    </solution>
+  </exercise>
+
+  <exercise xml:id="ex-parametric-conceptual-6">
+    <title>Exercise: Best in show</title>
+    <statement>
+      <p>Which statement best explains why two different parametric equations can describe the same geometric curve?</p>
+    </statement>
+      <choices>
+        <choice correct="no">
+           <statement><p>Because parametric equations always produce infinitely many different curves.</p> </statement>
+        </choice>
+        <choice correct="yes">
+           <statement><p>
+            Different functions of the parameter can produce the same set of points, possibly with different speeds or directions.
+           </p> </statement>
+        </choice>
+        <choice correct="no">
+           <statement><p>Because every Cartesian equation has only one possible parametrization.</p> </statement>
+        </choice>
+        <choice correct="no">
+           <statement><p>
+            Because changing the parameter always changes the geometric shape of the curve.
+          </p> </statement>
+        </choice>
+      </choices>
+    <solution>
+       <statement>
+      <p>
+        A parametric curve is determined by the set of points traced and how they are traced. 
+        Different choices of parameter can produce the same set of points while changing orientation, 
+        speed, or how often the curve is retraced.
+      </p>
+       </statement>
+    </solution>
+  </exercise>
+
+  <exercise xml:id="ex-parametric-conceptual-7">
+    <title>Exercise: Correct Description</title>
+    <statement>
+      <p>A particle moves according to <m>x=\cos t</m>, <m>y=\sin t</m>, for <m>0\le t\le \pi</m>. 
+        Which description is correct?</p>
+    </statement>
+      <choices>
+        <choice correct="no">
+           <statement><p>The particle traces the entire unit circle clockwise.</p> </statement>
+        </choice>
+        <choice correct="yes">
+           <statement><p>The particle traces the upper semicircle counterclockwise from <m>(1,0)</m> to <m>(-1,0)</m>.</p> </statement>
+        </choice>
+        <choice correct="no">
+           <statement><p>The particle traces the lower semicircle clockwise from <m>(1,0)</m> to <m>(-1,0)</m>.</p> </statement>
+        </choice>
+        <choice correct="no">
+           <statement><p>The particle traces a line segment from <m>(1,0)</m> to <m>(-1,0)</m>.</p> </statement>
+        </choice>
+      </choices>
+    <solution>
+       <statement>
+      <p>At <m>t=0</m>, the point is <m>(1,0)</m>. At <m>t=\pi/2</m>, the point is <m>(0,1)</m>.
+         At <m>t=\pi</m>, the point is <m>(-1,0)</m>. Thus the motion follows the upper semicircle counterclockwise.</p>
+       </statement>
+    </solution>
+  </exercise>
+
+
+<exercise label="parametric-multiple-choice-multiple-answers">
+  <title>Exercise: Select all that apply</title>
+  <statement>
+    <p>
+      A particle moves according to <m>x=t^2</m> and <m>y=t^2</m> for <m>-2\le t&lt;2</m>.
+      Select all true statements about the curve and the motion of the particle.
+    </p>
+  </statement>
+  <choices>
+    <choice correct="yes">
+      <statement>
+        <p>
+          Every point traced by the particle lies on the line <m>y=x</m>.
+        </p>
+      </statement>
+      <feedback>
+        <p>
+          Correct. Since <m>x=t^2</m> and <m>y=t^2</m>, we always have <m>y=x</m>.
+        </p>
+      </feedback>
+    </choice>
+
+    <choice correct="yes">
+      <statement>
+        <p>
+          The particle traces a line segment from <m>(0,0)</m> to <m>(4,4)</m>.
+        </p>
+      </statement>
+      <feedback>
+        <p>
+          Correct. Because <m>t^2</m> ranges through all values from <m>0</m> to <m>4</m>, both <m>x</m> and <m>y</m> take the same values in that interval, so the traced set is exactly the line segment on <m>y=x</m> from <m>(0,0)</m> to <m>(4,4)</m>.
+        </p>
+      </feedback>
+    </choice>
+
+    <choice correct ="no"> 
+      <statement>
+        <p>
+          The parametric equations trace an arc of the parabola <m>y=x^2</m> from <m>(0,0)</m> to <m>(4,4)</m>.
+        </p>
+      </statement>
+      <feedback>
+        <p>
+          This is false. Since <m>x=t^2</m> and <m>y=t^2</m>, eliminating the parameter gives <m>y=x</m>, not <m>y=x^2</m>. The curve is a line segment, not a parabolic arc.
+        </p>
+      </feedback>
+    </choice>
+
+    <choice correct="yes">
+      <statement>
+        <p>
+          The particle starts at <m>(4,4)</m>, moves to <m>(0,0)</m>, and then retraces the same segment back toward <m>(4,4)</m>.
+        </p>
+      </statement>
+      <feedback>
+        <p>
+          Correct. At <m>t=-2</m>, the particle is at <m>(4,4)</m>. As <m>t</m> increases to <m>0</m>, <m>t^2</m> decreases to <m>0</m>, so the particle moves to <m>(0,0)</m>. Then as <m>t</m> increases from <m>0</m> toward <m>2</m>, <m>t^2</m> increases again, so the particle retraces the same path.
+        </p>
+      </feedback>
+    </choice>
+
+    <choice correct="no">
+      <statement>
+        <p>
+          All points on the curve are traced twice.
+        </p>
+      </statement>
+      <feedback>
+        <p>
+          False. If <m>0&lt;a&lt;4</m>, then the point <m>(a,a)</m> occurs for both <m>t=\sqrt{a}</m> and <m>t=-\sqrt{a}</m>. 
+          The origin is traced only once, at <m>t=0</m>. The point <m>(4,4)</m> is approached again as <m>t\to 2^-</m>, but <m>t=2</m> is not included.
+        </p>
+      </feedback>
+    </choice>
+
+    <choice correct="yes">
+      <statement>
+        <p>
+          The particle is at the point <m>(4, 4)</m> at some moment <m>t</m> .
+        </p>
+      </statement>
+      <feedback>
+        <p>
+          This is true. The particle is at the point <m>(4,4)</m> at time <m>t=-2</m>.
+        </p>
+      </feedback>
+    </choice>
+  </choices>
+  <hint>
+    <p>
+      Try eliminating the parameter first. Then think separately about the <em>geometric curve</em> and the <em>direction of motion</em> as <m>t</m> increases.
+    </p>
+  </hint>
+  <solution>
+    <p>
+      Since <m>x=t^2</m> and <m>y=t^2</m>, we have <m>y=x</m>. Because <m>-2\le t&lt;2</m>, the quantity <m>t^2</m> takes every value in the interval <m>[0,4]</m>. Therefore, the geometric curve is the line segment from <m>(0,0)</m> to <m>(4,4)</m>. At <m>t=-2</m>, the particle starts at <m>(4,4)</m>, moves toward <m>(0,0)</m> as <m>t</m> increases to <m>0</m>, and then retraces the segment back toward <m>(4,4)</m> as <m>t</m> increases from <m>0</m> toward <m>2</m>. Thus the true statements are that the curve lies on <m>y=x</m>, that it is the segment from <m>(0,0)</m> to <m>(4,4)</m>, that the particle retraces the segment, and that most points are traced twice.
+    </p>
+  </solution>
+</exercise>
+
+
+
+<exercise xml:id="matching-parametric-distractors" label="matching-parametric-concepts-with-distractors">
+  <title>Exercise: Match Parametric Equations to Graph Descriptions (with Distractors)</title>
+  <idx>parametric matching</idx>
+  <statement>
+    <p>
+      Match each parametric curve with the description of its graph or motion.
+      Some responses may not match any curve.
+    </p>
+  </statement>
+  <feedback>
+    <p>
+      Eliminate the parameter to see the geometric curve, consider the range of t, and pay attention to motion direction.
+    </p>
+  </feedback>
+  <cardsort>
+    <!-- True matches -->
+    <match>
+      <premise order="1"><m>x=t^2, y=t^2</m>, <m>-2 ≤ t &lt; 2</m></premise>
+      <response>Line segment from (0,0) to (4,4), points mostly traced twice, retraces motion</response>
+    </match>
+    <match>
+      <premise order="2"><m>x=cos(t), y=sin(t)</m>, <m>0 ≤ t ≤ 2π</m></premise>
+      <response>Circle of radius 1 centered at the origin, traced once counterclockwise</response>
+    </match>
+    <match>
+      <premise order="3"><m>x=t, y=t^2<m>, </m>-2 ≤ t ≤ 2</m></premise>
+      <response>Parabola opening upward from (-2,2) to (2,2)</response>
+    </match>
+    <match>
+      <premise order="4"><m>x=2cos(t), y=3sin(t)</m>, <m>0 ≤ t ≤ 2π</m></premise>
+      <response>Ellipse centered at the origin, semi-major axis 3 along y, semi-minor axis 2 along x</response>
+    </match>
+    <match>
+      <premise order="5"><m>x=sin(2t), y=cos(2t)</m>, <m>0 ≤ t ≤ 2π</m></premise>
+      <response>Circle of radius 1 centered at the origin, traced twice counterclockwise</response>
+    </match>
+        <match>
+      <premise order="6"><m>x=3, y=t^2</m>, <m>0 ≤ t ≤ 3</m></premise>
+      <response>A vertical line segment</response>
+    </match>
+ <!-- Distractors -->
+    <match>     
+      <response>Line segment along <m>y=2x</m> from <m>(0,0)</m> to <m>(2,4)</m></response>
+    </match>
+    <match>
+      <response>Circle of radius 2 centered at the origin</response>
+    </match>
+    <match>
+      <response>An horizontal line segment</response>
+    </match>
+    <response>Downward-opening parabola from (-2,4) to (2,4)</response>
+    <response>Horizontal line y=3</response>
+    <response>Figure traced only once from t=0 to t=1</response>
+  </cardsort>
+</exercise>
+
+<exercise xml:id="matching-parametric-reset" label="matching-parametric-concepts">
+  <title>Exercise: Match Parametric Equations to Graph Descriptions II (with Distractors)</title>
+  <idx>parametric matching with distractors</idx>
+
+  <statement>
+    <p>
+      Match each parametric curve with the description of its graph or motion.
+      Some responses may not match any curve.
+    </p>
+  </statement>
+
+  <feedback>
+    <p>
+      To analyze a parametric curve, try eliminating the parameter first.
+      Then consider the interval for <m>t</m> and whether the particle traces the curve once, retraces part of it, 
+      or changes direction.
+    </p>
+  </feedback>
+
+  <cardsort>
+    <!-- True matches -->
+    <match>
+      <premise order="1"><m>x=t^2,\ y=t^2,\ -2\le t&lt;2</m></premise>
+      <response>Line segment on <m>y=x</m> from <m>(0,0)</m> to <m>(4,4)</m>, mostly traced twice</response>
+    </match>
+
+    <match>
+      <premise order="2"><m>x=\cos t,\ y=\sin t</m>, <m>0\le t\le 2\pi</m></premise>
+      <response>Circle of radius 1 centered at the origin, traced once counterclockwise</response>
+    </match>
+
+    <match>
+      <premise order="3"><m>x=t,\ y=t^2,\ -2\le t\le 2</m></premise>
+      <response>Upward-opening parabola from <m>(-2,4)</m> through <m>(0,0)</m> to <m>(2,4)</m></response>
+    </match>
+
+    <match>
+      <premise order="4"><m>x=2\cos t,\ y=3\sin t</m>, <m>0\le t\le 2\pi</m></premise>
+      <response>Ellipse centered at the origin with horizontal semiaxis 2 and vertical semiaxis 3</response>
+    </match>
+
+    <match>
+      <premise order="5"><m>x=t^3,\ y=t^6,\ -1\le t\le 1</m></premise>
+      <response>Upper half of the curve <m>y=x^2</m> from <m>(-1,1)</m> to <m>(1,1)</m></response>
+    </match>
+
+    <!-- Distractors: responses with no matching premise -->
+     <match>
+      <response>Horizontal line segment from <m>(-2,3)</m> to <m>(2,3)</m></response>
+     </match>
+     
+    <match><response>Circle of radius 2 centered at <m>(1,1)</m></response></match>
+    <match><response>Downward-opening parabola from <m>(-2,4)</m> to <m>(2,4)</m></response></match>
+    <response>Line segment on <m>y=x</m> from <m>(0,0)</m> to <m>(4,4)</m>, traced exactly once</response>
+    <response>Ellipse centered at the origin with horizontal semiaxis 3 and vertical semiaxis 2</response>
+  </cardsort>
+
+  <hint>
+    <p>
+      Some responses are distractors and should remain unmatched.
+      If two equations seem similar, pay close attention to the interval of <m>t</m> and the direction of motion.
+    </p>
+  </hint>
+
+  <solution>
+    <p>
+      The correct matches are found by identifying the geometric curve first and then checking the interval of <m>t</m>.
+      For example, <m>x=t^2</m> and <m>y=t^2</m> imply <m>y=x</m>, but only for <m>0\le x\le 4</m>, and the motion retraces the segment because both positive and negative values of <m>t</m> produce the same point.
+      The remaining unmatched responses are distractors.
+    </p>
+  </solution>
+
+  <statement>
+    <p>
+      <button type="button" onclick="window.location.reload();">Reset Problem</button>
+    </p>
+  </statement>
+</exercise>
+</exercises>
+</section>
