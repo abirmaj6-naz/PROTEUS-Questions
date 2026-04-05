@@ -12,448 +12,720 @@
   </introduction>
 
 
-  <exercise xml:id="sec10-3-concept-mc-01" label="sec10-3-concept-mc-01">
+  <exercise xml:id="sec10-3-concept-mc-02" label="sec10-3-concept-mc-02">
+      <title>Exercise: Interpreting a horizontal tangent.</title>
+    <statement>
+      <p>
+        Suppose a particle moves along a parametric curve and at <m>t=t_0</m> we have
+        <m>\dfrac{dy}{dt}=0</m> and <m>\dfrac{dx}{dt}\neq 0</m>.
+        What does this tell us?
+      </p>
+    </statement>
+
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement><p>The tangent line to the curve is horizontal at the corresponding point.</p></statement>
+        <feedback><p>Correct. When <m>\dfrac{dy}{dt}=0</m> and <m>\dfrac{dx}{dt}\neq 0</m>, 
+          the slope of the tangent line to the curve <m>y(x)</m> is <m>\dfrac{dy}{dx}=0</m>.</p></feedback>
+      </choice>
+      <choice correct="no">
+        <statement><p>The particle has stopped moving completely.</p></statement>
+        <feedback><p><m>\dfrac{dy}{dt}=0</m> only means the vertical component of motion is zero at that instant.</p></feedback>
+      </choice>
+      <choice correct="no">
+        <statement><p>The tangent line is vertical at the corresponding point.</p></statement>
+        <feedback><p>A vertical tangent is associated with <m>\dfrac{dx}{dt}=0</m> and <m>\dfrac{dy}{dt}\neq 0</m>.</p></feedback>
+      </choice>
+      <choice correct="no">
+        <statement><p>The curve must have a local maximum in <m>y</m>.</p></statement>
+        <feedback><p>A horizontal tangent does not automatically imply a local maximum.</p></feedback>
+      </choice>
+    </choices>
+  </exercise>
+
+    <exercise xml:id="sec10-3-concept-mc-03" label="sec10-3-concept-mc-03">
+      <title>Exercise: Interpreting concavity for a parametric curve.</title>
+    <statement>
+
+      <p>
+        At a point on a parametric curve, suppose <m>\dfrac{d^2y}{dx^2}&gt;0</m>.
+        Which statement best describes the graph near that point?
+      </p>
+    </statement>
+
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement><p>The curve is concave up near that point (where the derivative is defined).</p></statement>
+        <feedback><p>Correct. A positive second derivative indicates concave up behavior.</p></feedback>
+      </choice>
+      <choice correct="no">
+        <statement><p>The curve must cross the <m>x</m>-axis at that point.</p></statement>
+        <feedback><p>Concavity does not determine whether the curve crosses an axis.</p></feedback>
+      </choice>
+      <choice correct="no">
+        <statement><p>The tangent line must be horizontal at that point.</p></statement>
+        <feedback><p>Concavity and slope are different ideas.</p></feedback>
+      </choice>
+      <choice correct="no">
+        <statement><p>The particle must be speeding up at that point.</p></statement>
+        <feedback><p>Concavity of the graph is not the same as speed increasing.</p></feedback>
+      </choice>
+    </choices>
+  </exercise>
+
+    <!-- <exercise xml:id="sec10-3-concept-sata-01" label="sec10-3-concept-sata-01">
+      <title>Exercise: Understanding parameterizations.</title>
+    <statement>
+      <p>
+        Select all statements that are true about parametric equations.
+      </p>
+    </statement>
+
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement><p>Different parametric equations can represent the same geometric curve.</p></statement>
+        <feedback><p>Correct.</p></feedback>
+      </choice>
+      <choice correct="yes">
+        <statement><p>Two parameterizations of the same curve may trace the curve at different speeds.</p></statement>
+        <feedback><p>Correct.</p></feedback>
+      </choice>
+      <choice correct="yes">
+        <statement><p>Two parameterizations of the same curve may trace the curve in opposite directions.</p></statement>
+        <feedback><p>Correct.</p></feedback>
+      </choice>
+      <choice correct="no">
+        <statement><p>If two parameterizations are different formulas, they must represent different curves.</p></statement>
+        <feedback><p>Different formulas can still describe the same curve.</p></feedback>
+      </choice>
+      <choice correct="no">
+        <statement><p>The parameter <m>t</m> must always represent time.</p></statement>
+        <feedback><p>The parameter is often interpreted as time, but it does not have to be.</p></feedback>
+      </choice>
+    </choices>
+  </exercise> -->
+
+    <exercise xml:id="sec10-3-concept-sata-02" label="sec10-3-concept-sata-02">
+      <title>Exercise: Horizontal and vertical tangents.</title>
+    <statement>
+      <p>
+        Select all true statements about tangent lines to parametric curves.
+      </p>
+    </statement>
+
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement><p>If <m>\dfrac{dy}{dt}=0</m> and <m>\dfrac{dx}{dt}\neq 0</m>, then the tangent line is horizontal.</p></statement>
+        <feedback><p>Correct.</p></feedback>
+      </choice>
+      <choice correct="yes">
+        <statement><p>If <m>\dfrac{dx}{dt}=0</m> and <m>\dfrac{dy}{dt}\neq 0</m>, then the tangent line is vertical.</p></statement>
+        <feedback><p>Correct.</p></feedback>
+      </choice>
+      <choice correct="no">
+        <statement><p>If <m>\dfrac{dy}{dt}=0</m>, then the particle is not moving.</p></statement>
+        <feedback><p>The particle may still be moving horizontally.</p></feedback>
+      </choice>
+      <choice correct="no">
+        <statement><p>If <m>\dfrac{dx}{dt}=0</m>, then the tangent line must be horizontal.</p></statement>
+        <feedback><p>This is the condition associated with a vertical tangent, provided <m>\dfrac{dy}{dt}\neq 0</m>.</p></feedback>
+      </choice>
+      <choice correct="yes">
+        <statement><p>A particle can be moving even when the tangent line is horizontal.</p></statement>
+        <feedback><p>Correct. The horizontal component of velocity may be nonzero.</p></feedback>
+      </choice>
+    </choices>
+  </exercise>
+
+    <!-- <exercise xml:id="sec10-3-concept-sata-03" label="sec10-3-concept-sata-03">
+      <title>Exercise: Interpreting motion from a parameterization.</title>
+    <statement>
+      <p>
+        A particle moves according to <m>x=\cos t</m>, <m>y=\sin t</m> for <m>0\le t\le 2\pi</m>.
+        Select all true statements.
+      </p>
+    </statement>
+
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement><p>The particle traces the unit circle.</p></statement>
+        <feedback><p>Correct.</p></feedback>
+      </choice>
+      <choice correct="yes">
+        <statement><p>The particle begins at <m>(1,0)</m>.</p></statement>
+        <feedback><p>Correct.</p></feedback>
+      </choice>
+      <choice correct="yes">
+        <statement><p>The particle moves counterclockwise.</p></statement>
+        <feedback><p>Correct.</p></feedback>
+      </choice>
+      <choice correct="no">
+        <statement><p>The particle begins at <m>(0,1)</m>.</p></statement>
+        <feedback><p>At <m>t=0</m>, the point is <m>(1,0)</m>.</p></feedback>
+      </choice>
+      <choice correct="no">
+        <statement><p>The particle traces the circle clockwise.</p></statement>
+        <feedback><p>The motion is counterclockwise.</p></feedback>
+      </choice>
+    </choices>
+  </exercise> -->
+
+    <exercise xml:id="sec10-3-concept-sata-04" label="sec10-3-concept-sata-04">
     <title>Exercise: Same curve, different parameterizations.</title>
      <statement>
     <p>
       Two particles move according to the parametric equations
-      <m>x=t,\ y=t^2</m> and <m>x=2t,\ y=4t^2</m>.
-      Which statement is true?
+      <m>x=t,\ y=t^2</m> and <m>\overline{x}=2t,\ \overline{y}=4t^2</m>.
+      Select all true statements.
     </p>
   </statement>
 
   <choices randomize="yes">
     <choice correct="yes">
-      <statement><p>Both particles trace the same parabola, but they may move along it at different rates.</p></statement>
-      <feedback><p>Correct. Both parameterizations describe the curve <m>y=x^2</m>, but the parameter changes how the curve is traced.</p></feedback>
+      <statement>
+        <p>
+          Both particles trace the same parabola, 
+          but they may move along it at different rates.
+        </p>
+      </statement>
+      <feedback>
+        <p>
+        Correct. Both parameterizations describe the curve <m>y=x^2</m>, 
+        but the parameter changes how the curve is traced.
+      </p>
+    </feedback>
     </choice>
     <choice correct="no">
-      <statement><p>The particles trace different curves because the equations are not identical.</p></statement>
+      <statement>
+        <p>
+          The particles trace different curves because the equations are not identical.
+        </p>
+      </statement>
       <feedback><p>Different parameterizations can describe the same geometric curve.</p></feedback>
     </choice>
     <choice correct="no">
-      <statement><p>The second particle traces a line, not a parabola.</p></statement>
-      <feedback><p>Eliminating the parameter still gives <m>y=x^2</m>.</p></feedback>
+      <statement><p>Since both parametrizations describe the same parabola, so
+        <m>\dfrac{dy}{dx}</m> is equal to <m>\dfrac{d\overline{y}}{d\overline{x}}</m>.</p></statement>
+      <feedback><p>Both particles move along the parabola <m>y=x^2</m>, but at different speed.</p></feedback>
     </choice>
-    <choice correct="no">
-      <statement><p>The two particles must move in opposite directions.</p></statement>
+    <!-- <choice correct="yes">
+      <statement><p><m> \dfrac{d\overline{y}}{d\overline{x}}</m> is twice <m>\dfrac{dy}{dx}</m>.
+      </p></statement>
       <feedback><p>There is no reason they must move in opposite directions.</p></feedback>
     </choice>
+    <choice correct="yes">
+      <statement><p><m>\dfrac{dy}{dx} = 2\dfrac{d\overline{y}}{d\overline{x}}</m></p></statement>
+      <feedback><p>Correct. <m>\dfrac{dy}{dx} = 2t</m> and \dfrac{d\overline{y}}{d\overline{x}} = 4t.</p></feedback>
+    </choice> -->
+ <choice correct="yes">
+      <statement><p><m>\dfrac{dy}{dx}</m> is half of <m>\dfrac{d\overline{y}}{d\overline{x}}</m>.</p></statement>
+      <feedback><p>Correct. The second particle moves at twice the speed of the first particle.</p></feedback>
+    </choice>
+    <choice correct="yes">
+      <statement><p>The second particle is faster than the first, so 
+        <m>\dfrac{dy}{dx} \lt \dfrac{d\overline{y}}{d\overline{x}}</m></p></statement>
+      <feedback><p>Correct. The second particle moves at twice the speed of the first particle.</p></feedback>
+    </choice>
+ <choice correct="yes">
+      <statement><p>Both particles have constant acceleration.</p></statement>
+      <feedback><p>Correct. For the first particle the acceleration is 2 and for the second is 4 at any time <m>t</m></p></feedback>
+    </choice>
+    
   </choices>
 </exercise>
 
-<!--
-  <exercise xml:id="ex-parametric-conceptual-2">
-    <title>Exercise: What is this curve?</title>
+
+  <exercise xml:id="sec10-3-concept-match-01" label="sec10-3-concept-match-01">
+      <title>Exercise: Match each condition with its geometric interpretation.</title>
     <statement>
-      <p>Consider the parametric equations <m>x=t^2</m>, <m>y=t+1</m>, for <m>-2\le t\le 2</m>. Which statement is true?</p>
-      </statement>
-      <choices>
-        <choice correct="no">
-          <statement><p>The curve is part of a parabola traced exactly once from left to right.</p></statement>
-        </choice>
-        <choice correct="yes">
-          <statement><p>The curve is part of a sideways parabola, and some <m>x</m>-values occur more than once.</p></statement>
-        </choice>
-        <choice correct="no">
-          <statement><p>The curve is a line segment traced from bottom to top.</p></statement>
-        </choice>
-        <choice correct="no">
-          <statement><p>The curve is the entire parabola <m>y=x^2</m>.</p></statement>
-        </choice>
-      </choices>
-    <solution>
-      <p>Since <m>t=y-1</m>, substituting into <m>x=t^2</m> gives <m>x=(y-1)^2</m>, a sideways parabola. 
-        Because <m>x=t^2</m>, the same <m>x</m>-value occurs for both positive and negative values of <m>t</m>.</p>
-    </solution>
+      <p>
+        Match each condition for a parametric curve with the correct interpretation.
+      </p>
+    </statement>
+
+    <cardsort>
+      <match>
+        <premise order="1"><m>\dfrac{dy}{dt}=0,\ \dfrac{dx}{dt}\neq 0</m></premise>
+        <response>Horizontal tangent line</response>
+      </match>
+      <match>
+        <premise order="2"><m>\dfrac{dx}{dt}=0,\ \dfrac{dy}{dt}\neq 0</m></premise>
+        <response>Horizontal normal line</response>
+      </match>
+      <match>
+        <premise order="3"><m>\dfrac{d^2y}{dx^2}&gt;0</m></premise>
+        <response>Concave up</response>
+      </match>
+      <match>
+        <premise order="4"><m>\dfrac{dx}{dt}>0</m>, <m>\dfrac{dy}{dt}>0</m></premise>
+        <response>The curve <m>y=y(x)</m> is increasing near <m>x</m>.</response>
+      </match>
+      <match>
+        <response>Constant speed</response>
+      </match>
+      <match>
+        <response>Clockwise motion</response>
+      </match>
+     <match>
+        <response>The curve <m>y=y(x)</m> is decreasing near <m>x</m>.</response>
+      </match> 
+    </cardsort>
+  </exercise>
+
+  <!-- <exercise xml:id="sec10-3-concept-match-02" label="sec10-3-concept-match-02">
+      <title>Exercise: Match each parameterization with the motion it describes.</title>
+    <statement>
+      <p>
+        Match each parameterization with the corresponding description of the motion.
+      </p>
+    </statement>
+
+    <cardsort>
+      <match>
+        <premise order="1"><m>x=\cos t,\ y=\sin t,</m> <m> 0\le t\le 2\pi</m></premise>
+        <response>One counterclockwise trip around the unit circle</response>
+      </match>
+      <match>
+        <premise order="2"><m>x=\cos t,\ y=-\sin t,</m> <m> 0 \le t\le 2\pi</m></premise>
+        <response>One clockwise trip around the unit circle</response>
+      </match>
+      <match>
+        <premise order="3"><m>x=t,\ y=t^2,\ -1\le t\le 1</m></premise>
+        <response>Part of the parabola <m>y=x^2</m> traced from left to right</response>
+      </match>
+      <match>
+        <response>Upper semicircle only</response>
+      </match>
+      <match>
+        <response>Straight line traced twice</response>
+      </match>
+    </cardsort>
+  </exercise>
+
+  <exercise xml:id="sec10-3-concept-match-03" label="sec10-3-concept-match-03">
+      <title>Exercise: Match each statement with the best description.</title>
+    <statement>
+      <p>
+        Match each statement about a parametric curve with the correct conceptual idea.
+      </p>
+    </statement>
+    <cardsort>
+      <match>
+        <premise order="1">Different formulas produce the same geometric curve.</premise>
+        <response>Same curve, different parameterization</response>
+      </match>
+      <match>
+        <premise order="2">The curve is traced in the reverse order as <m>t</m> increases.</premise>
+        <response>Opposite direction of motion</response>
+      </match>
+      <match>
+        <premise order="3">The particle reaches some parts of the curve more quickly than others.</premise>
+        <response>Nonconstant speed along the curve</response>
+      </match>
+      <match>
+        <response>Vertical tangent at every point</response>
+      </match>
+      <match>
+        <response>The curve must be a circle</response>
+      </match>
+    </cardsort>
   </exercise> -->
 
-  <exercise xml:id="ex-parametric-conceptual-3">
-    <title>Exercise: No Direction home</title>
-    
-    <statement>
-      <p>Suppose <m>x(t)</m> is increasing and <m>y(t)</m> is decreasing on an interval. 
-        What can be concluded about the motion of the particle <m>(x(t), y(t))</m> on that interval?</p>
-      </statement>
-      <choices>
-        <choice correct="no">
-          <statement><p>The particle moves left and up.</p></statement>
-        </choice>
-        <choice correct="yes">
-          <statement>
-            <p>
-              The particle moves right and down.
-            </p>
-          </statement>
-        </choice>
-        <choice correct="no">
-          <statement><p>The particle moves left and down.</p></statement>
-        </choice>
-        <choice correct="no">
-          <statement><p>The particle must move along a straight line.</p></statement>
-        </choice>
-      </choices>
-    <solution>
-      <p>If <m>x(t)</m> is increasing, then the particle moves to the right. If <m>y(t)</m> is decreasing, then the particle moves downward. 
-        This does not imply the path is a straight line.</p>
-    </solution>
-  </exercise>
-
-
-  <exercise xml:id="ex-parametric-conceptual-4">
-    <title>Exercise: Select the correct statement</title>
-    
-    <statement>
-      <p>Two parametrizations are given:</p>
-      <p><m>x=\cos t,\ y=\sin t,\ 0\le t\le 2\pi</m></p>
-      <p>and</p>
-      <p><m>x=\cos(2t),\ y=\sin(2t),\ 0\le t\le \pi</m>.</p>
-      <p>Which statement is true?</p>
-    </statement>
-      <choices>
-        <choice correct="no">
-           <statement><p>The second traces a larger circle.</p> </statement>
-        </choice>
-        <choice correct="no">
-           <statement><p>The second traces the same circle twice.</p> </statement>
-        </choice>
-        <choice correct="yes">
-           <statement><p>The second traces the same circle once, but at a different speed.</p> </statement>
-        </choice>
-        <choice correct="no">
-           <statement><p>The two curves are different because the parameter intervals are different.</p> </statement>
-        </choice>
-      </choices>
-    <solution>
-      <p>As <m>t</m> goes from <m>0</m> to <m>\pi</m>, the angle <m>2t</m> goes from <m>0</m> to <m>2\pi</m>. So the second parametrization traces the unit circle exactly once, but the parameter changes at a different rate.</p>
-    </solution>
-  </exercise>
-
-  <exercise xml:id="ex-parametric-conceptual-5">
-    <title>Exercise: Find the Cartesian Equation</title>
-    <statement>
-      <p>A parametric curve is given by <m>x=t^3</m>, <m>y=t^6</m>. Which Cartesian equation describes the curve?</p>
-    </statement>
-      <choices>
-        <choice correct="no">
-           <statement><p><m>y=x^2</m>, with <m>x\ge 0</m></p> </statement>
-        </choice>
-        <choice correct="yes">
-           <statement><p><m>y=x^2</m>, with <m>y\ge 0</m></p> </statement>
-        </choice>
-        <choice correct="no">
-           <statement><p><m>x=y^2</m>, with <m>x\ge 0</m></p> </statement>
-        </choice>
-        <choice correct="no">
-           <statement><p><m>y=x^3</m></p> </statement>
-        </choice>
-      </choices>
-    <solution>
-       <statement>
-      <p>Since <m>x=t^3</m>, we have <m>x^2=t^6=y</m>. Thus the curve satisfies <m>y=x^2</m>. 
-        Because squares are nonnegative, <m>y\ge 0</m>, which is consistent with the parabola.</p>
-       </statement>
-    </solution>
-  </exercise>
-
-  <exercise xml:id="ex-parametric-conceptual-6">
-    <title>Exercise: Best in show</title>
-    <statement>
-      <p>Which statement best explains why two different parametric equations can describe the same geometric curve?</p>
-    </statement>
-      <choices>
-        <choice correct="no">
-           <statement><p>Because parametric equations always produce infinitely many different curves.</p> </statement>
-        </choice>
-        <choice correct="yes">
-           <statement><p>
-            Different functions of the parameter can produce the same set of points, possibly with different speeds or directions.
-           </p> </statement>
-        </choice>
-        <choice correct="no">
-           <statement><p>Because every Cartesian equation has only one possible parametrization.</p> </statement>
-        </choice>
-        <choice correct="no">
-           <statement><p>
-            Because changing the parameter always changes the geometric shape of the curve.
-          </p> </statement>
-        </choice>
-      </choices>
-    <solution>
-       <statement>
-      <p>
-        A parametric curve is determined by the set of points traced and how they are traced. 
-        Different choices of parameter can produce the same set of points while changing orientation, 
-        speed, or how often the curve is retraced.
-      </p>
-       </statement>
-    </solution>
-  </exercise>
-
-  <exercise xml:id="ex-parametric-conceptual-7">
-    <title>Exercise: Correct Description</title>
-    <statement>
-      <p>A particle moves according to <m>x=\cos t</m>, <m>y=\sin t</m>, for <m>0\le t\le \pi</m>. 
-        Which description is correct?</p>
-    </statement>
-      <choices>
-        <choice correct="no">
-           <statement><p>The particle traces the entire unit circle clockwise.</p> </statement>
-        </choice>
-        <choice correct="yes">
-           <statement><p>The particle traces the upper semicircle counterclockwise from <m>(1,0)</m> to <m>(-1,0)</m>.</p> </statement>
-        </choice>
-        <choice correct="no">
-           <statement><p>The particle traces the lower semicircle clockwise from <m>(1,0)</m> to <m>(-1,0)</m>.</p> </statement>
-        </choice>
-        <choice correct="no">
-           <statement><p>The particle traces a line segment from <m>(1,0)</m> to <m>(-1,0)</m>.</p> </statement>
-        </choice>
-      </choices>
-    <solution>
-       <statement>
-      <p>At <m>t=0</m>, the point is <m>(1,0)</m>. At <m>t=\pi/2</m>, the point is <m>(0,1)</m>.
-         At <m>t=\pi</m>, the point is <m>(-1,0)</m>. Thus the motion follows the upper semicircle counterclockwise.</p>
-       </statement>
-    </solution>
-  </exercise>
-
-
-<exercise label="parametric-multiple-choice-multiple-answers">
-  <title>Exercise: Select all that apply</title>
+  <exercise xml:id="ex-10-3-conceptual-tangent-normal" label="mathematical-multiple-choice">
+  <title></title>
   <statement>
     <p>
-      A particle moves according to <m>x=t^2</m> and <m>y=t^2</m> for <m>-2\le t&lt;2</m>.
-      Select all true statements about the curve and the motion of the particle.
+      Consider a curve defined parametrically by <m>x=f(t)</m> and <m>y=g(t)</m>.
+      Suppose that at <m>t=t_0</m>, we have <m>\dfrac{dy}{dx}=0</m> and both
+      <m>\dfrac{dx}{dt}</m> and <m>\dfrac{dy}{dt}</m> are defined.
+      Which statement must be true?
     </p>
   </statement>
   <choices>
     <choice correct="yes">
       <statement>
         <p>
-          Every point traced by the particle lies on the line <m>y=x</m>.
+          The tangent line is horizontal at the point corresponding to <m>t_0</m>.
         </p>
       </statement>
       <feedback>
         <p>
-          Correct. Since <m>x=t^2</m> and <m>y=t^2</m>, we always have <m>y=x</m>.
+          Correct. A slope of <m>\dfrac{dy}{dx}=0</m> means the tangent line is horizontal,
+          provided the derivative exists in the usual sense.
         </p>
       </feedback>
     </choice>
-
-    <choice correct="yes">
+    <choice>
       <statement>
         <p>
-          The particle traces a line segment from <m>(0,0)</m> to <m>(4,4)</m>.
+          The tangent line is vertical at the point corresponding to <m>t_0</m>.
         </p>
       </statement>
       <feedback>
         <p>
-          Correct. Because <m>t^2</m> ranges through all values from <m>0</m> to <m>4</m>, both <m>x</m> and <m>y</m> take the same values in that interval, so the traced set is exactly the line segment on <m>y=x</m> from <m>(0,0)</m> to <m>(4,4)</m>.
+          Incorrect. A vertical tangent is associated with an undefined or infinite value of
+          <m>\dfrac{dy}{dx}</m>, not with <m>\dfrac{dy}{dx}=0</m>.
         </p>
       </feedback>
     </choice>
-
-    <choice correct ="no"> 
+    <choice>
       <statement>
         <p>
-          The parametric equations trace an arc of the parabola <m>y=x^2</m> from <m>(0,0)</m> to <m>(4,4)</m>.
+          The normal line is horizontal at the point corresponding to <m>t_0</m>.
         </p>
       </statement>
       <feedback>
         <p>
-          This is false. Since <m>x=t^2</m> and <m>y=t^2</m>, eliminating the parameter gives <m>y=x</m>, not <m>y=x^2</m>. The curve is a line segment, not a parabolic arc.
+          Incorrect. If the tangent line is horizontal, then the normal line is vertical.
         </p>
       </feedback>
     </choice>
-
-    <choice correct="yes">
+    <choice>
       <statement>
         <p>
-          The particle starts at <m>(4,4)</m>, moves to <m>(0,0)</m>, and then retraces the same segment back toward <m>(4,4)</m>.
+          The curve must have a local maximum or minimum of <m>y</m> at <m>t=t_0</m>.
         </p>
       </statement>
       <feedback>
         <p>
-          Correct. At <m>t=-2</m>, the particle is at <m>(4,4)</m>. As <m>t</m> increases to <m>0</m>, <m>t^2</m> decreases to <m>0</m>, so the particle moves to <m>(0,0)</m>. Then as <m>t</m> increases from <m>0</m> toward <m>2</m>, <m>t^2</m> increases again, so the particle retraces the same path.
-        </p>
-      </feedback>
-    </choice>
-
-    <choice correct="no">
-      <statement>
-        <p>
-          All points on the curve are traced twice.
-        </p>
-      </statement>
-      <feedback>
-        <p>
-          False. If <m>0&lt;a&lt;4</m>, then the point <m>(a,a)</m> occurs for both <m>t=\sqrt{a}</m> and <m>t=-\sqrt{a}</m>. 
-          The origin is traced only once, at <m>t=0</m>. The point <m>(4,4)</m> is approached again as <m>t\to 2^-</m>, but <m>t=2</m> is not included.
-        </p>
-      </feedback>
-    </choice>
-
-    <choice correct="yes">
-      <statement>
-        <p>
-          The particle is at the point <m>(4, 4)</m> at some moment <m>t</m> .
-        </p>
-      </statement>
-      <feedback>
-        <p>
-          This is true. The particle is at the point <m>(4,4)</m> at time <m>t=-2</m>.
+          Incorrect. A horizontal tangent does not automatically imply a local maximum or minimum.
+          More information about how the curve behaves near <m>t_0</m> is needed.
         </p>
       </feedback>
     </choice>
   </choices>
   <hint>
     <p>
-      Try eliminating the parameter first. Then think separately about the <em>geometric curve</em> and the <em>direction of motion</em> as <m>t</m> increases.
+      Remember: the slope of the tangent line is <m>\dfrac{dy}{dx}</m>, and the normal line is
+      perpendicular to the tangent line.
     </p>
   </hint>
-  <solution>
-    <p>
-      Since <m>x=t^2</m> and <m>y=t^2</m>, we have <m>y=x</m>. Because <m>-2\le t&lt;2</m>, the quantity <m>t^2</m> takes every value in the interval <m>[0,4]</m>. Therefore, the geometric curve is the line segment from <m>(0,0)</m> to <m>(4,4)</m>. At <m>t=-2</m>, the particle starts at <m>(4,4)</m>, moves toward <m>(0,0)</m> as <m>t</m> increases to <m>0</m>, and then retraces the segment back toward <m>(4,4)</m> as <m>t</m> increases from <m>0</m> toward <m>2</m>. Thus the true statements are that the curve lies on <m>y=x</m>, that it is the segment from <m>(0,0)</m> to <m>(4,4)</m>, that the particle retraces the segment, and that most points are traced twice.
-    </p>
-  </solution>
 </exercise>
 
-
-
-<exercise xml:id="matching-parametric-distractors" label="matching-parametric-concepts-with-distractors">
-  <title>Exercise: Match Parametric Equations to Graph Descriptions (with Distractors)</title>
-  <idx>parametric matching</idx>
+<exercise xml:id="ex-10-3-conceptual-concavity-arclength" label="mathematical-multiple-choice-multiple-answers">
+  <title></title>
   <statement>
     <p>
-      Match each parametric curve with the description of its graph or motion.
-      Some responses may not match any curve.
+      Let a smooth curve be given by parametric equations <m>x=f(t)</m> and <m>y=g(t)</m> on
+      <m>a\le t\le b</m>. Which of the following statements are true?
+      Select all that apply.
     </p>
   </statement>
-  <feedback>
+  <choices>
+    <choice correct="yes">
+      <statement>
+        <p>
+          The arc length of the curve from <m>t=a</m> to <m>t=b</m> is
+          <m>\displaystyle L=\int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}\,dt</m>.
+        </p>
+      </statement>
+      <feedback>
+        <p>
+          Correct. This is the standard arc length formula for a parametrically defined curve.
+        </p>
+      </feedback>
+    </choice>
+    <choice correct="yes">
+      <statement>
+        <p>
+          To determine concavity of a parametric curve, one typically studies
+          <m>\dfrac{d^2y}{dx^2}</m>, not just <m>\dfrac{d^2y}{dt^2}</m>.
+        </p>
+      </statement>
+      <feedback>
+        <p>
+          Correct. Concavity with respect to the graph in the <m>xy</m>-plane is determined by
+          <m>\dfrac{d^2y}{dx^2}</m>, since this describes how the slope <m>\dfrac{dy}{dx}</m>
+          changes as <m>x</m> changes.
+        </p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>
+          If <m>\dfrac{d^2y}{dt^2}>0</m> on an interval, then the parametric curve must be concave up there.
+        </p>
+      </statement>
+      <feedback>
+        <p>
+          Incorrect. Concavity of a parametric curve depends on <m>\dfrac{d^2y}{dx^2}</m>, not merely
+          on <m>\dfrac{d^2y}{dt^2}</m>.
+        </p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>
+          The arc length can always be found by integrating
+          <m>\displaystyle \int_a^b \left(\frac{dy}{dx}\right)\,dt</m>.
+        </p>
+      </statement>
+      <feedback>
+        <p>
+          Incorrect. Arc length depends on the total rate of change in both coordinates, so both
+          <m>\dfrac{dx}{dt}</m> and <m>\dfrac{dy}{dt}</m> are needed.
+        </p>
+      </feedback>
+    </choice>
+    <choice>
+      <statement>
+        <p>
+          If <m>\dfrac{dy}{dx}</m> is increasing as <m>x</m> increases, then the curve is concave down.
+        </p>
+      </statement>
+      <feedback>
+        <p>
+          Incorrect. If <m>\dfrac{dy}{dx}</m> is increasing as <m>x</m> increases, then the curve is
+          concave up.
+        </p>
+      </feedback>
+    </choice>
+  </choices>
+  <hint>
     <p>
-      Eliminate the parameter to see the geometric curve, consider the range of t, and pay attention to motion direction.
+      Separate the ideas:
+      <m>\dfrac{dy}{dx}</m> gives slope,
+      <m>\dfrac{d^2y}{dx^2}</m> gives concavity,
+      and arc length measures the total distance traveled along the curve.
     </p>
-  </feedback>
-  <cardsort>
-    <!-- True matches -->
-    <match>
-      <premise order="1"><m>x=t^2, y=t^2</m>, <m>-2 ≤ t &lt; 2</m></premise>
-      <response>Line segment from (0,0) to (4,4), points mostly traced twice, retraces motion</response>
-    </match>
-    <match>
-      <premise order="2"><m>x=cos(t), y=sin(t)</m>, <m>0 ≤ t ≤ 2π</m></premise>
-      <response>Circle of radius 1 centered at the origin, traced once counterclockwise</response>
-    </match>
-    <match>
-      <premise order="3"><m>x=t, y=t^2<m>, </m>-2 ≤ t ≤ 2</m></premise>
-      <response>Parabola opening upward from (-2,2) to (2,2)</response>
-    </match>
-    <match>
-      <premise order="4"><m>x=2cos(t), y=3sin(t)</m>, <m>0 ≤ t ≤ 2π</m></premise>
-      <response>Ellipse centered at the origin, semi-major axis 3 along y, semi-minor axis 2 along x</response>
-    </match>
-    <match>
-      <premise order="5"><m>x=sin(2t), y=cos(2t)</m>, <m>0 ≤ t ≤ 2π</m></premise>
-      <response>Circle of radius 1 centered at the origin, traced twice counterclockwise</response>
-    </match>
-        <match>
-      <premise order="6"><m>x=3, y=t^2</m>, <m>0 ≤ t ≤ 3</m></premise>
-      <response>A vertical line segment</response>
-    </match>
- <!-- Distractors -->
-    <match>     
-      <response>Line segment along <m>y=2x</m> from <m>(0,0)</m> to <m>(2,4)</m></response>
-    </match>
-    <match>
-      <response>Circle of radius 2 centered at the origin</response>
-    </match>
-    <match>
-      <response>An horizontal line segment</response>
-    </match>
-    <response>Downward-opening parabola from (-2,4) to (2,4)</response>
-    <response>Horizontal line y=3</response>
-    <response>Figure traced only once from t=0 to t=1</response>
-  </cardsort>
+  </hint>
 </exercise>
-
-<exercise xml:id="matching-parametric-reset" label="matching-parametric-concepts">
-  <title>Exercise: Match Parametric Equations to Graph Descriptions II (with Distractors)</title>
-  <idx>parametric matching with distractors</idx>
-
+<exercise xml:id="parsons-10-3-arclength-formula-distractors" label="horizontal-parson-math-10-3-2b" language="math">
+  <title></title>
   <statement>
     <p>
-      Match each parametric curve with the description of its graph or motion.
-      Some responses may not match any curve.
+      Rearrange the needed blocks to form the correct arc length formula for a parametric curve
+      from <m>t=a</m> to <m>t=b</m>. Not all blocks will be used.
+    </p>
+  </statement>
+  <blocks layout="horizontal" randomize="yes">
+    <block order="1" correct="yes"><m>L</m></block>
+    <block order="2" correct="yes"><m>=</m></block>
+    <block order="3" correct="yes"><m>\displaystyle \int_a^b</m></block>
+    <block order="4" correct="yes"><m>\sqrt{\left(\dfrac{dx}{dt}\right)^2+\left(\dfrac{dy}{dt}\right)^2}</m></block>
+    <block order="5" correct="yes"><m>\,dt</m></block>
+
+    <block correct="no"><m>\dfrac{dy}{dx}</m></block>
+    <block correct="no"><m>\left(\dfrac{dx}{dt}\right)+\left(\dfrac{dy}{dt}\right)</m></block>
+    <block correct="no"><m>\,dx</m></block>
+  </blocks>
+</exercise>
+ <!-- ========================================================= -->
+  <!-- 4. Formula for d^2y/dx^2 -->
+  <!-- ========================================================= -->
+
+  <exercise label="parsons-10-3-second-derivative" language="math">
+    <title/>
+    <statement>
+      <p>
+        Arrange the blocks to form the standard formula for the second
+        derivative <m>\dfrac{d^2y}{dx^2}</m> of a parametric curve.
+      </p>
+    </statement>
+
+    <blocks layout="horizontal" randomize="yes">
+      <block order="1"><m>\dfrac{d^2y}{dx^2}</m></block>
+      <block order="2"><m>=</m></block>
+      <block order="3"><m>\dfrac{d}{dt}\!\left(\dfrac{dy}{dx}\right)</m></block>
+      <block order="4"><m>\cdot</m></block>
+      <block order="5"><m>\dfrac{1}{dx/dt}</m></block>
+    </blocks>
+
+    <hint>
+      <p>
+        Differentiate <m>\dfrac{dy}{dx}</m> with respect to <m>t</m>, then
+        convert from <m>t</m>-differentiation to <m>x</m>-differentiation.
+      </p>
+    </hint>
+
+    <answer>
+      <p>
+        <m>\dfrac{d^2y}{dx^2}
+        =
+        \dfrac{d}{dt}\!\left(\dfrac{dy}{dx}\right)\cdot\dfrac{1}{dx/dt}</m>
+      </p>
+    </answer>
+
+    <solution>
+      <p>
+        Since <m>\dfrac{d}{dx}=\dfrac{1}{dx/dt}\dfrac{d}{dt}</m>, we apply this
+        operator to <m>\dfrac{dy}{dx}</m>. Thus
+        <m>\dfrac{d^2y}{dx^2}
+        =
+        \dfrac{d}{dt}\!\left(\dfrac{dy}{dx}\right)\cdot\dfrac{1}{dx/dt}</m>.
+      </p>
+    </solution>
+  </exercise>
+
+  <!-- Instructor note:
+       This is better than asking students to memorize the full expanded
+       quotient-formula version. It emphasizes the conceptual operator idea:
+       "differentiate with respect to t, then divide by dx/dt." -->
+
+       <!-- <exercise label="parsons-10-3-arc-length-split" language="math">
+  <title/>
+  <statement>
+    <p>
+      Arrange the blocks to form the arc length formula for the parametric
+      curve <m>x=f(t)</m>, <m>y=g(t)</m> on <m>a\le t\le b</m>. 
     </p>
   </statement>
 
-  <feedback>
-    <p>
-      To analyze a parametric curve, try eliminating the parameter first.
-      Then consider the interval for <m>t</m> and whether the particle traces the curve once, retraces part of it, 
-      or changes direction.
-    </p>
-  </feedback>
-
-  <cardsort>
-    <!-- True matches -->
-    <match>
-      <premise order="1"><m>x=t^2,\ y=t^2,\ -2\le t&lt;2</m></premise>
-      <response>Line segment on <m>y=x</m> from <m>(0,0)</m> to <m>(4,4)</m>, mostly traced twice</response>
-    </match>
-
-    <match>
-      <premise order="2"><m>x=\cos t,\ y=\sin t</m>, <m>0\le t\le 2\pi</m></premise>
-      <response>Circle of radius 1 centered at the origin, traced once counterclockwise</response>
-    </match>
-
-    <match>
-      <premise order="3"><m>x=t,\ y=t^2,\ -2\le t\le 2</m></premise>
-      <response>Upward-opening parabola from <m>(-2,4)</m> through <m>(0,0)</m> to <m>(2,4)</m></response>
-    </match>
-
-    <match>
-      <premise order="4"><m>x=2\cos t,\ y=3\sin t</m>, <m>0\le t\le 2\pi</m></premise>
-      <response>Ellipse centered at the origin with horizontal semiaxis 2 and vertical semiaxis 3</response>
-    </match>
-
-    <match>
-      <premise order="5"><m>x=t^3,\ y=t^6,\ -1\le t\le 1</m></premise>
-      <response>Upper half of the curve <m>y=x^2</m> from <m>(-1,1)</m> to <m>(1,1)</m></response>
-    </match>
-
-    <!-- Distractors: responses with no matching premise -->
-     <match>
-      <response>Horizontal line segment from <m>(-2,3)</m> to <m>(2,3)</m></response>
-     </match>
-     
-    <match><response>Circle of radius 2 centered at <m>(1,1)</m></response></match>
-    <match><response>Downward-opening parabola from <m>(-2,4)</m> to <m>(2,4)</m></response></match>
-    <response>Line segment on <m>y=x</m> from <m>(0,0)</m> to <m>(4,4)</m>, traced exactly once</response>
-    <response>Ellipse centered at the origin with horizontal semiaxis 3 and vertical semiaxis 2</response>
-  </cardsort>
+  <blocks layout="horizontal" randomize="yes">
+    <block order="1"><m>L</m></block>
+    <block order="2"><m>=</m></block>
+    <block order="3"><m>\displaystyle\int_a^b</m></block>
+    <block order="4"><m>\sqrt{}{</m></block>
+    <block order="5"><m>\left(\dfrac{dx}{dt}\right)^2</m></block>
+    <block order="6"><m>+</m></block>
+    <block order="7"><m>\left(\dfrac{dy}{dt}\right)^2</m></block>
+    <block order="8"><m></m></block>
+    <block order="9"><m>\,dt</m></block>
+  </blocks>
 
   <hint>
     <p>
-      Some responses are distractors and should remain unmatched.
-      If two equations seem similar, pay close attention to the interval of <m>t</m> and the direction of motion.
+      Arc length is the integral of speed, and speed is the magnitude of the
+      velocity vector <m>\langle x'(t),y'(t)\rangle</m>.
     </p>
   </hint>
 
+  <answer>
+    <p>
+      <m>
+        L=\displaystyle\int_a^b
+        \sqrt{\left(\dfrac{dx}{dt}\right)^2+\left(\dfrac{dy}{dt}\right)^2}\,dt
+      </m>
+    </p>
+  </answer>
+
   <solution>
     <p>
-      The correct matches are found by identifying the geometric curve first and then checking the interval of <m>t</m>.
-      For example, <m>x=t^2</m> and <m>y=t^2</m> imply <m>y=x</m>, but only for <m>0\le x\le 4</m>, and the motion retraces the segment because both positive and negative values of <m>t</m> produce the same point.
-      The remaining unmatched responses are distractors.
+      For a parametric curve, arc length is found by integrating the speed:
+      <m>\sqrt{(x'(t))^2+(y'(t))^2}</m>. Therefore
+      <m>
+        L=\displaystyle\int_a^b
+        \sqrt{\left(\dfrac{dx}{dt}\right)^2+\left(\dfrac{dy}{dt}\right)^2}\,dt
+      </m>.
     </p>
   </solution>
-
+</exercise> -->
+<exercise label="parsons-10-3-arc-length-specific-1" language="math">
+  <title/>
   <statement>
     <p>
-      <button type="button" onclick="window.location.reload();">Reset Problem</button>
+      The curve is given parametrically by <m>x=t</m> and <m>y=t^2</m> for
+      <m>0\le t\le 1</m>.
+      Arrange the blocks to form the integral that gives the arc length of the curve.
+      Not all blocks will be used.
     </p>
   </statement>
+
+  <blocks layout="horizontal" randomize="yes">
+    <block order="1"><m>L</m></block>
+    <block order="2"><m>=</m></block>
+    <block order="3"><m>\displaystyle\int_0^1</m></block>
+    <block order="4"><m>\sqrt{1+4t^2}</m></block>
+    <block order="5"><m>\,dt</m></block>
+    <block correct="no"><m>\sqrt{t^2+4t^4}</m></block>
+    <block correct="no"><m>\sqrt{1+2t}</m></block>
+
+  </blocks>
+
+  <hint>
+    <p>
+      First compute <m>\dfrac{dx}{dt}</m> and <m>\dfrac{dy}{dt}</m>, then use
+      <m>L=\int_a^b\sqrt{\left(\dfrac{dx}{dt}\right)^2+\left(\dfrac{dy}{dt}\right)^2}\,dt</m>.
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      <m>L=\displaystyle\int_0^1\sqrt{1+4t^2}\,dt</m>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      Since <m>x=t</m>, we have <m>\dfrac{dx}{dt}=1</m>. Since <m>y=t^2</m>,
+      we have <m>\dfrac{dy}{dt}=2t</m>. Therefore,
+      <m>
+        L=\int_0^1 \sqrt{\left(\dfrac{dx}{dt}\right)^2+\left(\dfrac{dy}{dt}\right)^2}\,dt
+        =\int_0^1 \sqrt{1^2+(2t)^2}\,dt
+        =\int_0^1 \sqrt{1+4t^2}\,dt.
+      </m>
+    </p>
+  </solution>
+</exercise>
+<exercise label="horizontal-parson-arc-length-specific-hard" language="math">
+  <title>Horizontal Parsons Problem: Build the Arc Length Integral</title>
+  <statement>
+    <p>
+      Consider the parametric curve
+      <m>x(t)=t^3-3t,\quad y(t)=t^2+1,\quad -1\le t\le 2.</m>
+    </p>
+    <p>
+      Arrange the blocks to form the correct expression for the arc length of the curve on the given interval.
+    </p>
+    <p>
+      <em>Note:</em> Some blocks are distractors and should not be used.
+    </p>
+  </statement>
+
+  <blocks layout="horizontal" randomize="yes">
+    <!-- Correct blocks -->
+    <block order="1"><m>\int_{-1}^{2}</m></block>
+    <block order="2">sqrt</block>
+    <block order="3"><m>\Bigl(</m></block>
+    <block order="3"><m>\left(3t^2-3\right)^2</m></block>
+    <block order="4"><m>+</m></block>
+    <block order="5"><m>\left(2t\right)^2</m></block>
+    <block order="6"><m>\Bigr)</m></block>
+    <block order="7"><m>\,dt</m></block>
+
+    <!-- Distractors -->
+    <block correct="no"><m>\int_{0}^{2}</m></block>
+    <!-- <block correct="no"><m>\int_{-1}^{2}\left[\cdots\right]\,dt</m></block> -->
+    <block correct="no"><m>\left(3t^2-3\right)</m></block>
+    <block correct="no"><m>\left(2t\right)</m></block>
+    <!--
+    <block><m>\left(6t\right)^2</m></block>
+    <block><m>\sqrt{\left(3t^2-3\right)^2-\left(2t\right)^2}</m></block>
+    <block><m>\sqrt{\left(3t^2-3\right)+\left(2t\right)}</m></block>
+    <block><m>\,dx</m></block>
+    <block><m>\,ds</m></block>
+    <block><m>\left(3t^2+3\right)^2</m></block> -->
+  </blocks>
+
+  <answer>
+    <p>
+      The correct arc length expression is
+      <me>
+        \int_{-1}^{2}\sqrt{\left(3t^2-3\right)^2+\left(2t\right)^2}\,dt.
+      </me>
+    </p>
+  </answer>
+
+  <solution>
+    <p>
+      For a parametric curve <m>x=x(t)</m>, <m>y=y(t)</m>, the arc length on <m>a\le t\le b</m> is
+      <me>
+        L=\int_a^b \sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2}\,dt.
+      </me>
+    </p>
+    <p>
+      Here,
+      <me>
+        \frac{dx}{dt}=3t^2-3,\qquad \frac{dy}{dt}=2t.
+      </me>
+    </p>
+    <p>
+      Therefore,
+      <me>
+        L=\int_{-1}^{2}\sqrt{\left(3t^2-3\right)^2+\left(2t\right)^2}\,dt.
+      </me>
+    </p>
+  </solution>
 </exercise>
 </exercises>
 </section>

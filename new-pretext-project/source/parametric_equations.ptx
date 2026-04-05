@@ -264,12 +264,17 @@
     <choice correct="yes">
       <statement>
         <p>
-          The particle starts at <m>(4,4)</m>, moves to <m>(0,0)</m>, and then retraces the same segment back toward <m>(4,4)</m>.
+          The particle starts at <m>(4,4)</m>, moves to <m>(0,0)</m>, 
+          and then retraces the same segment back toward <m>(4,4)</m>.
         </p>
       </statement>
       <feedback>
         <p>
-          Correct. At <m>t=-2</m>, the particle is at <m>(4,4)</m>. As <m>t</m> increases to <m>0</m>, <m>t^2</m> decreases to <m>0</m>, so the particle moves to <m>(0,0)</m>. Then as <m>t</m> increases from <m>0</m> toward <m>2</m>, <m>t^2</m> increases again, so the particle retraces the same path.
+          Correct. At <m>t=-2</m>, the particle is at <m>(4,4)</m>. 
+          As <m>t</m> increases to <m>0</m>, <m>t^2</m> decreases to <m>0</m>, 
+          so the particle moves to <m>(0,0)</m>. 
+          Then as <m>t</m> increases from <m>0</m> toward <m>2</m>, 
+          <m>t^2</m> increases again, so the particle retraces the same path.
         </p>
       </feedback>
     </choice>
@@ -282,8 +287,11 @@
       </statement>
       <feedback>
         <p>
-          False. If <m>0&lt;a&lt;4</m>, then the point <m>(a,a)</m> occurs for both <m>t=\sqrt{a}</m> and <m>t=-\sqrt{a}</m>. 
-          The origin is traced only once, at <m>t=0</m>. The point <m>(4,4)</m> is approached again as <m>t\to 2^-</m>, but <m>t=2</m> is not included.
+          False. If <m>0&lt;a&lt;4</m>, then the point <m>(a,a)</m> 
+          occurs for both <m>t=\sqrt{a}</m> and <m>t=-\sqrt{a}</m>. 
+          The origin is traced only once, at <m>t=0</m>. 
+          The point <m>(4,4)</m> is approached again as <m>t\to 2^-</m>, 
+          but <m>t=2</m> is not included.
         </p>
       </feedback>
     </choice>
@@ -313,6 +321,37 @@
   </solution>
 </exercise>
 
+    <exercise xml:id="sec10-3-concept-sata-01" label="sec10-3-concept-sata-01">
+      <title>Exercise: Understanding parameterizations.</title>
+    <statement>
+      <p>
+        Select all statements that are true about parametric equations.
+      </p>
+    </statement>
+
+    <choices randomize="yes">
+      <choice correct="yes">
+        <statement><p>Different parametric equations can represent the same geometric curve.</p></statement>
+        <feedback><p>Correct.</p></feedback>
+      </choice>
+      <choice correct="yes">
+        <statement><p>Two parameterizations of the same curve may trace the curve at different speeds.</p></statement>
+        <feedback><p>Correct.</p></feedback>
+      </choice>
+      <choice correct="yes">
+        <statement><p>Two parameterizations of the same curve may trace the curve in opposite directions.</p></statement>
+        <feedback><p>Correct.</p></feedback>
+      </choice>
+      <choice correct="no">
+        <statement><p>If two parameterizations are different formulas, they must represent different curves.</p></statement>
+        <feedback><p>Different formulas can still describe the same curve.</p></feedback>
+      </choice>
+      <choice correct="no">
+        <statement><p>The parameter <m>t</m> must always represent time.</p></statement>
+        <feedback><p>The parameter is often interpreted as time, but it does not have to be.</p></feedback>
+      </choice>
+    </choices>
+  </exercise>
 
 
 <exercise xml:id="matching-parametric-distractors" label="matching-parametric-concepts-with-distractors">
@@ -326,18 +365,22 @@
   </statement>
   <feedback>
     <p>
-      Eliminate the parameter to see the geometric curve, consider the range of t, and pay attention to motion direction.
+      Eliminate the parameter to see the geometric curve, consider the range of t, 
+      and pay attention to motion direction.
     </p>
   </feedback>
   <cardsort>
     <!-- True matches -->
     <match>
       <premise order="1"><m>x=t^2, y=t^2</m>, <m>-2 ≤ t &lt; 2</m></premise>
-      <response>Line segment from (0,0) to (4,4), points mostly traced twice, retraces motion</response>
+      <response>Line segment from (0,0) to (4,4), points mostly traced twice, 
+        retraces motion</response>
     </match>
     <match>
       <premise order="2"><m>x=cos(t), y=sin(t)</m>, <m>0 ≤ t ≤ 2π</m></premise>
-      <response>Circle of radius 1 centered at the origin, traced once counterclockwise</response>
+      <response>
+        Circle of radius 1 centered at the origin, traced once counterclockwise
+      </response>
     </match>
     <match>
       <premise order="3"><m>x=t, y=t^2<m>, </m>-2 ≤ t ≤ 2</m></premise>
@@ -345,11 +388,15 @@
     </match>
     <match>
       <premise order="4"><m>x=2cos(t), y=3sin(t)</m>, <m>0 ≤ t ≤ 2π</m></premise>
-      <response>Ellipse centered at the origin, semi-major axis 3 along y, semi-minor axis 2 along x</response>
+      <response>
+        Ellipse centered at the origin, semi-major axis 3 along y, 
+        semi-minor axis 2 along x
+      </response>
     </match>
     <match>
       <premise order="5"><m>x=sin(2t), y=cos(2t)</m>, <m>0 ≤ t ≤ 2π</m></premise>
-      <response>Circle of radius 1 centered at the origin, traced twice counterclockwise</response>
+      <response>Circle of radius 1 centered at the origin, 
+        traced twice counterclockwise</response>
     </match>
         <match>
       <premise order="6"><m>x=3, y=t^2</m>, <m>0 ≤ t ≤ 3</m></premise>
