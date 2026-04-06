@@ -331,8 +331,8 @@
     </cardsort>
   </exercise> -->
 
-  <exercise xml:id="ex-10-3-conceptual-tangent-normal" label="mathematical-multiple-choice">
-  <title></title>
+  <!-- <exercise xml:id="ex-10-3-conceptual-tangent-normal" label="mathematical-multiple-choice">
+  <title>Exercise: Multiple Choice</title>
   <statement>
     <p>
       Consider a curve defined parametrically by <m>x=f(t)</m> and <m>y=g(t)</m>.
@@ -400,10 +400,10 @@
       perpendicular to the tangent line.
     </p>
   </hint>
-</exercise>
+</exercise> -->
 
 <exercise xml:id="ex-10-3-conceptual-concavity-arclength" label="mathematical-multiple-choice-multiple-answers">
-  <title></title>
+  <title>Exercise: Select all that apply</title>
   <statement>
     <p>
       Let a smooth curve be given by parametric equations <m>x=f(t)</m> and <m>y=g(t)</m> on
@@ -490,7 +490,8 @@
     </p>
   </hint>
 </exercise>
-<exercise xml:id="parsons-10-3-arclength-formula-distractors" label="horizontal-parson-math-10-3-2b" language="math">
+
+<!-- <exercise xml:id="parsons-10-3-arclength-formula-distractors" label="horizontal-parson-math-10-3-2b" language="math">
   <title></title>
   <statement>
     <p>
@@ -509,12 +510,12 @@
     <block correct="no"><m>\left(\dfrac{dx}{dt}\right)+\left(\dfrac{dy}{dt}\right)</m></block>
     <block correct="no"><m>\,dx</m></block>
   </blocks>
-</exercise>
+</exercise> -->
  <!-- ========================================================= -->
   <!-- 4. Formula for d^2y/dx^2 -->
   <!-- ========================================================= -->
 
-  <exercise label="parsons-10-3-second-derivative" language="math">
+  <!-- <exercise label="parsons-10-3-second-derivative" language="math">
     <title/>
     <statement>
       <p>
@@ -555,63 +556,10 @@
         \dfrac{d}{dt}\!\left(\dfrac{dy}{dx}\right)\cdot\dfrac{1}{dx/dt}</m>.
       </p>
     </solution>
-  </exercise>
+  </exercise> -->
 
-  <!-- Instructor note:
-       This is better than asking students to memorize the full expanded
-       quotient-formula version. It emphasizes the conceptual operator idea:
-       "differentiate with respect to t, then divide by dx/dt." -->
-
-       <!-- <exercise label="parsons-10-3-arc-length-split" language="math">
-  <title/>
-  <statement>
-    <p>
-      Arrange the blocks to form the arc length formula for the parametric
-      curve <m>x=f(t)</m>, <m>y=g(t)</m> on <m>a\le t\le b</m>. 
-    </p>
-  </statement>
-
-  <blocks layout="horizontal" randomize="yes">
-    <block order="1"><m>L</m></block>
-    <block order="2"><m>=</m></block>
-    <block order="3"><m>\displaystyle\int_a^b</m></block>
-    <block order="4"><m>\sqrt{}{</m></block>
-    <block order="5"><m>\left(\dfrac{dx}{dt}\right)^2</m></block>
-    <block order="6"><m>+</m></block>
-    <block order="7"><m>\left(\dfrac{dy}{dt}\right)^2</m></block>
-    <block order="8"><m></m></block>
-    <block order="9"><m>\,dt</m></block>
-  </blocks>
-
-  <hint>
-    <p>
-      Arc length is the integral of speed, and speed is the magnitude of the
-      velocity vector <m>\langle x'(t),y'(t)\rangle</m>.
-    </p>
-  </hint>
-
-  <answer>
-    <p>
-      <m>
-        L=\displaystyle\int_a^b
-        \sqrt{\left(\dfrac{dx}{dt}\right)^2+\left(\dfrac{dy}{dt}\right)^2}\,dt
-      </m>
-    </p>
-  </answer>
-
-  <solution>
-    <p>
-      For a parametric curve, arc length is found by integrating the speed:
-      <m>\sqrt{(x'(t))^2+(y'(t))^2}</m>. Therefore
-      <m>
-        L=\displaystyle\int_a^b
-        \sqrt{\left(\dfrac{dx}{dt}\right)^2+\left(\dfrac{dy}{dt}\right)^2}\,dt
-      </m>.
-    </p>
-  </solution>
-</exercise> -->
-<exercise label="parsons-10-3-arc-length-specific-1" language="math">
-  <title/>
+<!-- <exercise label="parsons-10-3-arc-length-specific-1" language="math">
+  <title> Build the Arc Length Integral </title>
   <statement>
     <p>
       The curve is given parametrically by <m>x=t</m> and <m>y=t^2</m> for
@@ -656,9 +604,10 @@
       </m>
     </p>
   </solution>
-</exercise>
+</exercise> -->
+
 <exercise label="horizontal-parson-arc-length-specific-hard" language="math">
-  <title>Horizontal Parsons Problem: Build the Arc Length Integral</title>
+  <title>Build the Arc Length Integral</title>
   <statement>
     <p>
       Consider the parametric curve
@@ -679,7 +628,7 @@
     <block order="3"><m>\Bigl(</m></block>
     <block order="3"><m>\left(3t^2-3\right)^2</m></block>
     <block order="4"><m>+</m></block>
-    <block order="5"><m>\left(2t\right)^2</m></block>
+    <block order="5"><m>4t^2</m></block>
     <block order="6"><m>\Bigr)</m></block>
     <block order="7"><m>\,dt</m></block>
 
@@ -687,7 +636,7 @@
     <block correct="no"><m>\int_{0}^{2}</m></block>
     <!-- <block correct="no"><m>\int_{-1}^{2}\left[\cdots\right]\,dt</m></block> -->
     <block correct="no"><m>\left(3t^2-3\right)</m></block>
-    <block correct="no"><m>\left(2t\right)</m></block>
+    <block correct="no"><m>2t</m></block>
     <!--
     <block><m>\left(6t\right)^2</m></block>
     <block><m>\sqrt{\left(3t^2-3\right)^2-\left(2t\right)^2}</m></block>
@@ -727,5 +676,6 @@
     </p>
   </solution>
 </exercise>
+
 </exercises>
 </section>
